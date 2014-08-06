@@ -10,18 +10,19 @@ html
 		link(rel='stylesheet', href='/stylesheets/style.css')
 		link(rel='stylesheet', href='/stylesheets/posts.css')
 		link(rel='stylesheet', href='/stylesheets/house.css')
+		link(rel='stylesheet', href='/stylesheets/us.css')
 	body
 		navbar.white-box
 			span#logo.nav-button
-				img(src="/images/logo.png", width="110")
+				img(src="/images/icons/logo.png", width="110")
 			a.nav-button(href="/", 		class=active['events']) 
-				img(src='/images/list.png', width='18')
+				img(src='/images/icons/list.png', width='18')
 			a.nav-button(href="/house", class=active['house']) 
-				img(src='/images/house.png', width='18')
+				img(src='/images/icons/house.png', width='18')
 			a.nav-button(href="/us", 	class=active['us']) 
-				img(src='/images/people.png', width='18')
+				img(src='/images/icons/people.png', width='18')
 			a.nav-button(href="/info", 	class=active['info']) 
-				img(src='/images/info.png', width='18')
+				img(src='/images/icons/info.png', width='18')
 		div.white-box.collapse-all 
 			span -
 		block content

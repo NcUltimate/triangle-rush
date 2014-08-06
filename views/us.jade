@@ -4,6 +4,16 @@ block content
 	.wrapper.us
 		.page-header 
 			.title Who We Are
-			img(src='/images/people_white.png', width='40')
-		.white-box.page-subtitle Stop by the house every Tuesday, Thursday and Friday for our official rush events! Meet brothers, take a tour of the house, and determine if Triangle is a good fit for you. You are more than welcome to stop by outside of rush events if you want to work on homework or just hang out.
+			img(src='/images/icons/people_white.png', width='40')
+		.white-box.page-subtitle All Triangle Fraternity brothers strive to be leaders in the campus, local community, and their chosen fields of studies. We are a social house of well-rounded engineers, scientists, architects and technologists.
 		hr
+		.post-container
+			each post, i in us
+				.post.white-box
+					.title #{post.name}
+					.img-container
+						img(src='/images/us/'+post.img)
+					.data-container
+						span.header
+							img(src='/images/icons/house.png', width=20)
+						span.description #{post.desc}

@@ -32,12 +32,12 @@ $(function() {
 });
 
 function toggle_info(par, el) {
-	if(el.css('display') == 'none') {
+	if(par.hasClass('minified')) {
 		par.removeClass('minified');
-		el.slideDown(400);
+		if(el) el.slideDown(400);
 	}
 	else {
 		par.addClass('minified');
-		el.slideUp(400);
+		if(el) el.slideUp(400);
 	}
 }
