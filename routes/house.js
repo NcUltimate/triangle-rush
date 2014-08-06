@@ -15,7 +15,7 @@ router.get('/', function(req, res) {
 					'name': 'formal',
 					'desc':  'Our formal provides plenty of space for studying, socializing and relaxing. Newly refurnished and cleaned over the summer, it is the most welcoming part of the house.',
 					'img': 'formal.jpg',
-					'features' : ['House magazines subscriptions: GQ, Sports Illustrated, and others','Strong wifi access', 'Grand piano']
+					'features' : ['Magazines available: GQ, Sports Illustrated, Popular Science and others','Strong wifi access', 'Grand piano']
 				},
 				{
 					'name':'dining room',
