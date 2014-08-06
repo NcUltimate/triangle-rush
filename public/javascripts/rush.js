@@ -11,9 +11,6 @@ $(function() {
 	$('.page-header').click(function(event) {
 		toggle_info($('.page-subtitle'));
 	});
-	$('.data-container').click(function(event) {
-		$(this).toggleClass('aside');
-	});
 });
 function toggle_info(el) {
 	if(el.css('display') == 'none')
