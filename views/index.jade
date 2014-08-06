@@ -1,0 +1,26 @@
+extends layout
+
+block content
+	.wrapper.events
+		.page-header 
+			.title Rush Events
+			img(src='/images/list_white.png', width='40')
+		.white-box.page-subtitle Stop by the house every Tuesday, Thursday and Friday for our official rush events! Meet brothers, take a tour of the house, and determine if Triangle is a good fit for you. You are more than welcome to stop by outside of rush events whenever you want to hang out, take a tour, or get homework help.
+		hr
+		.post-container
+			each evt, i in events
+				.post.white-box
+					.title #{evt.name}
+					.img-container
+						img(src='/images/rush_events/'+evt.img)
+					.data-container
+						span.header
+							.date-time
+								.date #{evt.date}
+								.time #{evt.time}
+						span.description #{evt.desc}
+			
+
+
+
+

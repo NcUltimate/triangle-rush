@@ -1,0 +1,25 @@
+doctype html
+html
+	head
+		title=title				
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		script(src="/javascripts/jquery-min.js")
+		script(src="/javascripts/rush.js")
+		link(rel='stylesheet', href='/stylesheets/fonts.css')
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/stylesheets/posts.css')
+		link(rel='stylesheet', href='/stylesheets/house.css')
+	body
+		navbar.white-box
+			span#logo.nav-button
+				img(src="/images/logo.png", width="110")
+			a.nav-button(href="/", 		class=active['events']) 
+				img(src='/images/list.png', width='18')
+			a.nav-button(href="/house", class=active['house']) 
+				img(src='/images/house.png', width='18')
+			a.nav-button(href="/us", 	class=active['us']) 
+				img(src='/images/people.png', width='18')
+			a.nav-button(href="/info", 	class=active['info']) 
+				img(src='/images/info.png', width='18')
+		block content

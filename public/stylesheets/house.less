@@ -1,0 +1,48 @@
+.house {
+	.page-header {
+		img {
+			margin-top: -20px;
+		}
+	}
+	.post {
+		.title { top: 120px; }
+		.img-container { 
+			height: 150px; 
+			position: relative;
+			box-shadow: 0px 1px 1px gray;
+		}
+		.data-container  {
+			padding: 0px;
+			span { padding: 10px; }
+			.description {
+				margin-top: 0px;
+				width: 49%;
+			}
+			.header {
+				border-left: 1px solid #aaa;
+				background: #eee;
+				width: 40%;
+				margin-right: 0px;
+				min-height: 102px;
+				height: 100%;
+				.room-features {
+					padding: 0px;
+					font-size: 12px;
+					margin-top: 0px;
+					color: black;
+					list-style: circle outside;
+					li {
+						font-size: 12px;
+						margin-left: 20px;
+						color: #666;
+					}
+				}
+			}
+		}
+	}
+}
+@media(min-width: 600px) {
+	.house .post-container .post .header {
+		width: 163px;
+	}
+}
