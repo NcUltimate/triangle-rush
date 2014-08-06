@@ -16,12 +16,12 @@ $(function() {
 		if(!collapsed) {
 			$('.page-subtitle, .data-container').slideUp(400);
 			$('.page-header, .post').addClass('minified');
-			text = '⊕';
+			text = '+';
 		}
 		else {
 			$('.data-container').slideDown(400);
 			$('.post').removeClass('minified');
-			text = '⊖';
+			text = '-';
 		}
 		$('.collapse-all span').fadeOut(100, function() {
 			$('.collapse-all span').html(text);
