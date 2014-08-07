@@ -5,7 +5,7 @@ block content
 		.page-header 
 			.title Who We Are
 			img(src='/images/icons/people_white.png', width='40')
-		.white-box.page-subtitle All Triangle Fraternity brothers strive to be leaders in the campus, local community, and their chosen fields of studies. We are a social house of well-rounded engineers, scientists, architects and technologists.
+		.white-box.page-subtitle All Triangle Fraternity brothers strive to be leaders in the campus, local community, and their chosen fields of studies. We are a social house of well-rounded students.
 		hr
 		.post-container
 			each post, i in us
@@ -14,6 +14,5 @@ block content
 					.img-container
 						img(src='/images/us/'+post.img)
 					.data-container
-						span.header
-							img(src='/images/icons/house.png', width=20)
+						span.header(class='fa-'+post.icon)
 						span.description #{post.desc}
