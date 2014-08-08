@@ -29,6 +29,12 @@ router.get('/', function(req, res) {
 			'icon': 'institution'
 		},
 		{
+			'name': 'Innovators',
+			'desc': 'Every semester and over the summer, Triangles accept positions in co-ops and internships at big name companies like GE, Microsoft, Cummins, SpaceX, and countless others. Anywhere you go in industry, tech, or manufacturing, you will find Triangles as a part of their workforce.',
+			'img': 'innovators.jpg',
+			'icon': 'lightbulb-o'
+		},
+		{
 			'name': 'Friends',
 			'desc': 'Friendship is a valued tenet at Triangle, and is exhibited by all. Within our walls is an open door community where everyone lives and socializes together, especially since most of us share interests in a diverse range of hobbies. Whether you enjoy CrossFit, League of Legends, fantasy football or building robots, anything is welcome and encouraged in our house.',
 			'img': 'friends.jpg',
@@ -36,7 +42,7 @@ router.get('/', function(req, res) {
 		},
 		{
 			'name': 'Volunteers',
-			'desc':  'As a Greek organization, we aspire to give back to our community through both volunteer work and philanthropy. Each semester we log over 250 hours of community service at various organizations in the greater lafayette area. Our Fall philanthropy, Mr. & Mrs. PUDM, raised over $600 for Riley Children\'s hospital last year, and our Spring philanthropy, Balls to the Wall, raised over $1000 for testicular cancer awareness.',
+			'desc':  'As a Greek organization, we aspire to give back to our community through both volunteer work and philanthropy. Each semester we log over 250 hours of community service at various organizations in the greater lafayette area. Our Fall philanthropy, Mr. & Mrs. PUDM, raised over $600 for Riley Children\'s hospital last year. Our Spring philanthropy, Balls to the Wall, raised over $1000 for testicular cancer awareness.',
 			'img': 'volunteers.jpg',
 			'icon': 'life-saver'
 		}];
