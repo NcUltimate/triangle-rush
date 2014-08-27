@@ -13,21 +13,26 @@
 		position: relative;
 		z-index: 2;
 		height: auto;
-		span { 
+		> span { 
 			padding: 10px;
+			span {
+				text-transform: uppercase;
+				font-size: 14px;
+				color: #333;
+			}
 		}
 		.description {
 			margin-top: 0px;
-			width: 25%;
+			width: 23%;
 		}
 		.header {
-			border-left: 1px solid #aaa;
-			background: #eee;
+			border-right: 1px solid #aaa;
+			background: #f6f6f6;
 
 			width: 22%;
 			height: 100%;
 			min-height: 100px;
-			padding-left: 0px;
+			padding-left: 5px;
 			.room-features {
 				padding: 0px;
 				font-size: 12px;
@@ -36,8 +41,8 @@
 				list-style: circle outside;
 				li {
 					font-size: 12px;
-					margin-left: 20px;
-					color: #666;
+					margin-left: 25px;
+					color: #444;
 				}
 			}
 		}

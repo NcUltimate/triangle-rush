@@ -3,7 +3,7 @@ extends layout
 block content
 	.wrapper.house
 		.page-header
-			.title Our House
+			.title Virtual Tour
 			img(src='/images/icons/house_white.png', width='40')
 		.white-box.page-subtitle Tours are available at any time, regardless of whether a rush event is occurring. We will gladly answer any questions or concerns you have about our living space, accomodations, handicap access, etc.
 		hr
@@ -14,8 +14,9 @@ block content
 					.img-container
 						img(src='/images/house/'+room.img)
 					.data-container
-						span.description #{room.desc}
 						span.header
+							span Features
 							ul.room-features
 								each feat in room.features
 									li.room-feature #{feat}
+						span.description #{room.desc}

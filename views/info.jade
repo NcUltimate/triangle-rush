@@ -5,5 +5,16 @@ block content
 		.page-header 
 			.title More Info
 			img(src='/images/icons/info_white.png', width='40')
-		.white-box.page-subtitle Stop by the house every Tuesday, Thursday and Friday for our official rush events! Meet brothers, take a tour of the house, and determine if Triangle is a good fit for you. You are more than welcome to stop by outside of rush events if you want to work on homework or just hang out.
+		.white-box.page-subtitle Would you like more information about experiencing Triangle? Want to contact us with any comments, complaints or questions? Here are some names and numbers you need to know.
 		hr
+		.post-container
+			each contact, i in contacts
+				.post.white-box
+					.contact-name
+						.field #{contact.name}
+						.field #{contact.role}
+					span.contact-info
+						.field #{contact.email}
+						.field #{contact.phone}
+					span.contact-tags
+						.field #{contact.tags}
