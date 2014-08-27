@@ -25,6 +25,7 @@ html
 				img(src='/images/icons/people.png', width='18')
 			a.nav-button(href="/info", 	class=active['info']) 
 				img(src='/images/icons/info.png', width='18')
-		div.white-box.collapse-all 
-			span -
+		if !active['info']
+			div.white-box.collapse-all 
+				span -
 		block content

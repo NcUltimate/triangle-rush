@@ -61,10 +61,16 @@ router.get('/', function(req, res) {
 			'features' : ['Capacitous closets', 'Decorate/Renovate anything', 'Cable and Internet ready', 'Keys for every room']
 		},
 		{
-			'name': 'laundry',
+			'name': 'laundry room',
 			'desc':  'Triangle provides free laundry to all in-house brothers. This includes washers, dryers, an ironing board, and a sink.',
-			'img': 'laundry.JPG',
+			'img': 'laundry.jpg',
 			'features' : ['4 dryers', '4 washers', '1 ironing board', 'Free at any time']
+		},
+		{
+			'name': 'conference room',
+			'desc':  'Our 2nd floor conference room is perfect for group meetings, studying, reading or watching a movie.',
+			'img': 'conference.jpg',
+			'features' : ['Private group workspace', 'Whiteboard and projectors', 'New office chairs']
 		}];
 
 	var act = { events:'', house:'active', info:'', us:'' };
